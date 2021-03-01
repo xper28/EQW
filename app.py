@@ -31,7 +31,7 @@ class bucket:
       self.allowance = self.allowance - 1
       return True
 # web app
-app = Flask(__name__, static_folder='./eqworks/build', static_url_path='/')
+app = Flask(__name__, static_folder='./build', static_url_path='/')
 
 # database engine
 engine = sqlalchemy.create_engine('postgresql://readonly:w2UIO@#bg532!@work-samples-db.cx4wctygygyq.us-east-1.rds.amazonaws.com:5432/work_samples')
@@ -40,7 +40,7 @@ engine = sqlalchemy.create_engine('postgresql://readonly:w2UIO@#bg532!@work-samp
 rate = 2
 time_unit = 5
 
-@app.route('/home')
+@app.route('/')
 def index():
     return app.send_static_file('index.html')
 
