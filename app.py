@@ -34,7 +34,7 @@ class bucket:
 app = Flask(__name__, static_folder='./eqworks/build', static_url_path='/')
 
 # database engine
-engine = sqlalchemy.create_engine(os.getenv('postgresql://readonly:w2UIO@#bg532!@work-samples-db.cx4wctygygyq.us-east-1.rds.amazonaws.com:5432/work_samples'))
+engine = sqlalchemy.create_engine('postgresql://readonly:w2UIO@#bg532!@work-samples-db.cx4wctygygyq.us-east-1.rds.amazonaws.com:5432/work_samples')
 
 # variables for rate limiters
 rate = 2
