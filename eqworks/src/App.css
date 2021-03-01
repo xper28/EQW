@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.marker-cluster-custom {
+  background: #50cc23;
+  border: 3px solid #b3eb9e;
+  border-radius: 50%;
+  color: #ededed;
+  height: 40px;
+  line-height: 37px;
+  text-align: center;
+  width: 40px;
+}
+
+.marker-clicks-custom {
+  background: #ff5733;
+  border: 3px solid #e9baaf;
+  border-radius: 50%;
+  color: #ededed;
+  height: 20px;
+  line-height: 37px;
+  text-align: center;
+  width: 20px;
+}
+
+.marker-impressions-custom {
+  background: #ffc300;
+  border: 3px solid #f0d888;
+  border-radius: 50%;
+  color: #ededed;
+  height: 20px;
+  line-height: 37px;
+  text-align: center;
+  width: 20px;
+}
+
+.marker-revenue-custom {
+  background: #900c3f;
+  border: 3px solid #e9a9c1;
+  border-radius: 50%;
+  color: #ededed;
+  height: 20px;
+  line-height: 37px;
+  text-align: center;
+  width: 20px;
+}
