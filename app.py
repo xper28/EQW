@@ -40,7 +40,7 @@ engine = sqlalchemy.create_engine('postgresql://readonly:w2UIO@#bg532!@work-samp
 rate = 2
 time_unit = 5
 
-@app.route('/')
+@app.route('/home')
 def index():
     return app.send_static_file('index.html')
 
